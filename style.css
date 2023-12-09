@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Countryside";
+  src: url("assets/Countryside/Countryside-YdKj.ttf");
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  min-height: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 2fr 6fr 1fr;
+}
+
+.header {
+  margin: 3vh;
+}
+
+.header p {
+  font-family: "Countryside", sans-serif;
+  font-size: 3rem;
+
+  color: #BC4749;
+}
+
+.card {
+  display: flex;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: end;
+  font-size: 0.75rem;
+  font-family: "Trebuchet MS";
+  gap: 6px;
+  margin-bottom: 2vh;
+}
+
+.copyright {
+  justify-self: end;
+}
+
+.github {
+  width: 15%;
+}
