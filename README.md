@@ -1,2 +1,3 @@
-# bingo-gen
-A printable bingo-card generator.
+# hallmark bingo
+
+Generate bingo cards for your favorite hallmark films!
