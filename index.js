@@ -116,9 +116,9 @@ const cardCreator = (width, height, cardEntries) => {
 
       // Manual media query
       if (Number(window.innerWidth) < 600) {
-        box.style.padding = "4px";
+        box.style.padding = "2px";
       } else {
-        box.style.padding = "6px";
+        box.style.padding = "5px";
       }
 
       if (i === height - 1) box.style.borderBottomStyle = "solid";
