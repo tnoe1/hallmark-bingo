@@ -107,14 +107,19 @@ const cardCreator = (width, height, cardEntries) => {
       box.style.borderLeftStyle = "solid";
       box.style.borderTopStyle = "solid";
       box.style.color = "#386641";
-      box.style.padding = "4px";
       box.style.backgroundColor = "#F2E8CF";
       box.style.borderColor = "#BC4749";
 
       box.style.display = "flex";
       box.style.alignItems = "center";
       box.style.justifyContent = "center";
-      box.style.padding = "6px";
+
+      // Manual media query
+      if (Number(window.innerWidth) < 600) {
+        box.style.padding = "2px";
+      } else {
+        box.style.padding = "5px";
+      }
 
       if (i === height - 1) box.style.borderBottomStyle = "solid";
       if (j === width - 1) box.style.borderRightStyle = "solid";

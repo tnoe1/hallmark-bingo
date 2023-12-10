@@ -32,6 +32,8 @@ html, body {
 .card-container {
   align-self: start;
   display: grid;
+  justify-content: center;
+  align-items: center;
   margin-top: 3vh;
 }
 
@@ -58,6 +60,22 @@ html, body {
 
 .github {
   width: 1.5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    padding-left: 6vw;
+  }
+
+  .card {
+    display: grid;
+    margin-left: 8vw;
+    margin-right: 2vw;
+  }
+
+  .github {
+    width: 3%;
+  }
 }
 
 @media print {
