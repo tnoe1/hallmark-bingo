@@ -10,12 +10,16 @@ html, body {
 .container {
   min-height: 100%;
   display: grid;
+  grid-template-rows: 1.5fr 6fr 1fr;
   justify-content: center;
-  grid-template-rows: 2fr 6fr 1fr;
+  align-items: start;
 }
 
 .header {
-  margin: 3vh;
+  align-self: end;
+  display: grid;
+  justify-content: center;
+  margin-bottom: 3vh;
 }
 
 .header p {
@@ -25,15 +29,23 @@ html, body {
   color: #BC4749;
 }
 
+.card-container {
+  align-self: start;
+  display: grid;
+  margin-top: 3vh;
+}
+
 .card {
-  display: flex;
+  display: grid;
+  margin-left: 30vw;
+  margin-right: 30vw;
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  align-self: end;
+  display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   font-size: 0.75rem;
   font-family: "Trebuchet MS";
   gap: 6px;
@@ -45,5 +57,13 @@ html, body {
 }
 
 .github {
-  width: 15%;
+  width: 1.5%;
+}
+
+@media print {
+  .card {
+    display: grid;
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
 }
